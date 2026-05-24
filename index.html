@@ -50,7 +50,6 @@ input[type="number"]{flex:1;padding:12px 16px;border:1.5px solid var(--border);b
 .nav-toggle{display:none;background:none;border:1.5px solid var(--border);border-radius:8px;padding:6px 10px;font-size:20px;cursor:pointer;color:var(--text-secondary);line-height:1}
 @media(max-width:640px){.nav-toggle{display:block}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);border-bottom:1.5px solid var(--border);padding:12px 20px;flex-direction:column;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,.08);z-index:99}.nav-links.open{display:flex}.nav{position:relative}}
 </style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5453815259196400" crossorigin="anonymous"></script>
 </head><body>
 <nav class="nav"><div class="nav-inner"><a href="https://jwaytools.com/" class="nav-logo">J<span>WAY</span></a><button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button><div class="nav-links"><a href="https://jwaytools.com/char-counter/">글자수</a><a href="https://jwaytools.com/date-calculator/">날짜</a><a href="https://jwaytools.com/percent-calculator/">퍼센트</a><a href="https://jwaytools.com/salary-calculator/">연봉</a><a href="https://jwaytools.com/bmi-calculator/">BMI</a><a href="https://jwaytools.com/exchange-rate/">환율</a><a href="https://jwaytools.com/unit-converter/">단위</a><a href="https://jwaytools.com/timer/">타이머</a><a href="https://jwaytools.com/qr-generator/">QR</a><a href="https://jwaytools.com/color-converter/">색상</a><a href="https://jwaytools.com/random-picker/">랜덤</a><a href="https://jwaytools.com/loan-calculator/">대출</a><a href="https://jwaytools.com/age-calculator/">만나이</a><a href="https://jwaytools.com/savings-calculator/">예적금</a><a href="https://jwaytools.com/income-tax-calculator/">소득세</a></div></div></nav>
 <header class="header"><h1>대출 이자 <em>계산기</em></h1><p>원리금균등·원금균등·만기일시상환 3가지 방식으로 월 상환금과 총 이자를 즉시 계산합니다.</p></header>
@@ -104,6 +103,21 @@ input[type="number"]{flex:1;padding:12px 16px;border:1.5px solid var(--border);b
 <h2>대출 계산 시 알아야 할 점</h2>
 <p>실제 대출에는 이자 외에도 여러 비용이 추가됩니다. 주택담보대출의 경우 근저당 설정비, 인지세, 대출 중도상환수수료(보통 1.2~1.4%)가 발생할 수 있습니다. 또한 고정금리·변동금리·혼합형에 따라 실제 납부 이자가 이 계산기의 결과와 달라질 수 있습니다. 변동금리는 기준금리가 오르면 월 상환금도 함께 증가하므로 여유 자금을 확보해두는 것이 좋습니다.</p>
 <p>DSR(총부채원리금상환비율) 규제도 중요합니다. 연간 원리금 상환액이 연 소득의 40%(은행)~50%(제2금융권)를 넘지 않아야 대출이 승인됩니다. 이 계산기의 "월 평균" 금액에 12를 곱한 값이 본인 연소득 대비 몇 %인지 미리 확인해보세요.</p>
+
+<h2>계산 기준과 확인 출처</h2>
+<p>이 계산기는 입력한 대출 원금, 연 이자율, 대출 기간을 기준으로 원리금균등·원금균등·만기일시상환의 월 상환액과 총 이자를 계산합니다. 이자율은 대출 기간 동안 변하지 않는다고 가정하며, 첫 달 일할 계산, 인지세, 중도상환수수료, 금리 우대 조건, 보증료는 포함하지 않습니다.</p>
+<p>대출 조건을 비교할 때는 <a href="https://finlife.fss.or.kr/" target="_blank" rel="noopener">금융감독원 금융상품 한눈에</a>, 각 은행의 대출상품 설명서, <a href="https://www.fsc.go.kr/" target="_blank" rel="noopener">금융위원회</a>의 가계대출·DSR 안내 자료를 함께 확인하세요. 실제 적용 금리는 신용점수, 담보 종류, 소득, 대출 한도, 우대금리 충족 여부에 따라 달라집니다.</p>
+
+<h2>실제 비교 예시 3가지</h2>
+<h3>예시 1: 1억원, 연 4.5%, 30년</h3>
+<p>원리금균등은 매월 같은 금액을 내기 때문에 장기 주택담보대출 계획에 적합합니다. 원금균등은 초기 납부액이 더 크지만 총 이자가 줄어듭니다. 만기일시상환은 매월 이자만 내므로 단기 자금 운용에는 편하지만 만기 원금 상환 계획이 반드시 필요합니다.</p>
+<h3>예시 2: 3,000만원, 연 6%, 5년</h3>
+<p>신용대출처럼 기간이 짧고 금리가 높은 상품은 상환 방식에 따른 총 이자 차이가 더 민감하게 느껴집니다. 월 납입 부담이 가능한 사람은 원금균등을 검토할 수 있고, 매월 고정 지출을 예측하고 싶다면 원리금균등이 관리하기 쉽습니다.</p>
+<h3>예시 3: 전세자금대출 만기일시상환</h3>
+<p>전세자금대출은 이자만 납부하다가 만기에 보증금 반환금으로 원금을 갚는 구조가 많습니다. 이 경우 월 부담은 낮지만 계약 만료 시점, 보증금 반환 지연, 금리 갱신 가능성까지 함께 확인해야 합니다.</p>
+
+<h2>사용 전 주의사항</h2>
+<p>이 계산 결과는 대출 실행 여부를 판단하는 공식 심사 결과가 아닙니다. 은행은 DSR, LTV, DTI, 신용점수, 재직기간, 소득 안정성, 기존 대출을 함께 봅니다. 실제 계약 전에는 금융회사에서 제공하는 상환예정표와 상품설명서를 기준으로 최종 확인하세요.</p>
 
 <h2>이 도구의 주요 기능</h2>
 <p>대출 원금, 연 이자율, 대출 기간을 입력하면 3가지 상환 방식별 월 상환금과 총 이자를 즉시 계산합니다. 원리금균등 방식은 매월 일정, 원금균등 방식은 첫달 상환금과 감소 패턴, 만기일시상환은 월 이자와 만기 원금을 각각 정확하게 산출합니다. 월별 상환 스케줄 표를 펼치면 첫 12개월의 회차별 원금·이자·잔액 변화를 한눈에 확인할 수 있어 상환 계획 수립에 유용합니다. 모든 계산은 브라우저에서 이루어지며 입력한 금액 정보는 어디에도 저장되지 않습니다.</p>
