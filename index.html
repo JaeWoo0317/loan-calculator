@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>대출 이자 계산기 — 원리금균등·원금균등·만기일시상환 | JWAY</title>
-<meta name="description" content="대출 이자 계산기 무료 온라인 도구. 원리금균등, 원금균등, 만기일시상환 방식으로 월 상환금과 총 이자를 정확하게 계산합니다.">
+<meta name="description" content="대출 이자 계산기 무료 온라인 도구. 원리금균등, 원금균등, 만기일시상환 방식의 예상 월 상환금과 총 이자를 비교합니다.">
 <meta name="keywords" content="대출 이자 계산기, 원리금균등, 원금균등, 만기일시상환, 주택담보대출, 대출 계산, 월 상환금">
 <meta property="og:title" content="대출 이자 계산기 — 월 상환금·총 이자 계산 | JWAY">
 <meta property="og:description" content="원리금균등·원금균등·만기일시상환 대출 계산기. 무료 온라인.">
@@ -50,9 +50,9 @@ input[type="number"]{flex:1;padding:12px 16px;border:1.5px solid var(--border);b
 .nav-toggle{display:none;background:none;border:1.5px solid var(--border);border-radius:8px;padding:6px 10px;font-size:20px;cursor:pointer;color:var(--text-secondary);line-height:1}
 @media(max-width:640px){.nav-toggle{display:block}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);border-bottom:1.5px solid var(--border);padding:12px 20px;flex-direction:column;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,.08);z-index:99}.nav-links.open{display:flex}.nav{position:relative}}
 .trust-bar{max-width:760px;margin:14px auto 0;padding:10px 14px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text-secondary);font-size:12px;text-align:center}.trust-bar a{color:var(--accent);font-weight:600}</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"대출 상환 비교 계산기","url":"https://jwaytools.com/loan-calculator/","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"author":{"@type":"Person","name":"JWAY 편집부","url":"https://jwaytools.com/about.html"},"dateModified":"2026-07-01"}</script></head><body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"대출 상환 비교 계산기","url":"https://jwaytools.com/loan-calculator/","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"author":{"@type":"Person","name":"JWAY 편집부","url":"https://jwaytools.com/about.html"},"dateModified":"2026-08-28"}</script></head><body>
 <nav class="nav"><div class="nav-inner"><a href="https://jwaytools.com/" class="nav-logo">J<span>WAY</span></a><button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button><div class="nav-links"><a href="https://jwaytools.com/salary-calculator/">연봉</a><a href="https://jwaytools.com/income-tax-calculator/">소득세</a><a href="https://jwaytools.com/loan-calculator/">대출</a><a href="https://jwaytools.com/savings-calculator/">예적금</a><a href="https://jwaytools.com/blog/">가이드</a><a href="https://jwaytools.com/editorial-policy.html">편집 원칙</a></div></div></nav>
-<header class="header"><h1>대출 이자 <em>계산기</em></h1><p>원리금균등·원금균등·만기일시상환 3가지 방식으로 월 상환금과 총 이자를 즉시 계산합니다.</p></header><div class="trust-bar">최종 검토 2026-07-01 · 상환식 직접 계산·금융감독원 안내 참고 · <a href="https://jwaytools.com/editorial-policy.html">계산 원칙</a></div>
+<header class="header"><h1>대출 이자 <em>계산기</em></h1><p>원리금균등·원금균등·만기일시상환 3가지 방식으로 예상 월 상환금과 총 이자를 비교합니다.</p></header><div class="trust-bar">최종 검토 2026-08-28 · 상환식 직접 계산·금융감독원 안내 참고 · <a href="https://jwaytools.com/editorial-policy.html">계산 원칙</a></div>
 <main class="container">
 <div class="tabs">
 <button class="tab-btn active" onclick="switchMode('equal')">원리금균등</button>
@@ -94,9 +94,18 @@ input[type="number"]{flex:1;padding:12px 16px;border:1.5px solid var(--border);b
 
 <div class="guide-tip"><strong>팁:</strong> 1억원을 연 4.5%, 30년 대출 기준으로 비교하면 원리금균등은 월 약 50만원에 총 이자 약 8,200만원, 원금균등은 첫달 약 65만원에서 시작해 총 이자 약 6,770만원, 만기일시상환은 월 37만원 이자 + 만기에 원금 1억원입니다. 생애주기별 소득 전망에 맞춰 선택하세요.</div>
 
+<h2>공개 검증값</h2>
+<p>2026년 8월 28일, 원금 1억원·연 4.5%·30년(360개월)을 고정금리와 월 단위 상환으로 가정해 세 방식의 수식을 다시 계산하고 화면 결과와 대조했습니다.</p>
+<table class="guide-table"><thead><tr><th>상환 방식</th><th>검증 결과</th></tr></thead><tbody>
+<tr><td>원리금균등</td><td>월 506,685원 · 총 이자 82,406,712원</td></tr>
+<tr><td>원금균등</td><td>첫 달 652,778원 · 총 이자 67,687,500원</td></tr>
+<tr><td>만기일시상환</td><td>월 이자 375,000원 · 총 이자 135,000,000원 · 만기에 원금 1억원 별도</td></tr>
+</tbody></table>
+<div class="guide-tip"><strong>검증 범위:</strong> 월 이자율은 연 이자율을 12로 나누고 원 단위로 표시할 때 반올림합니다. 금리 변동, 거치기간, 첫 회차 일할 계산, 수수료·보증료와 은행별 절사 규칙은 포함하지 않습니다.</div>
+
 <h2>대출 계산 시 알아야 할 점</h2>
-<p>실제 대출에는 이자 외에도 여러 비용이 추가됩니다. 주택담보대출의 경우 근저당 설정비, 인지세, 대출 중도상환수수료(보통 1.2~1.4%)가 발생할 수 있습니다. 또한 고정금리·변동금리·혼합형에 따라 실제 납부 이자가 이 계산기의 결과와 달라질 수 있습니다. 변동금리는 기준금리가 오르면 월 상환금도 함께 증가하므로 여유 자금을 확보해두는 것이 좋습니다.</p>
-<p>DSR(총부채원리금상환비율) 규제도 중요합니다. 연간 원리금 상환액이 연 소득의 40%(은행)~50%(제2금융권)를 넘지 않아야 대출이 승인됩니다. 이 계산기의 "월 평균" 금액에 12를 곱한 값이 본인 연소득 대비 몇 %인지 미리 확인해보세요.</p>
+<p>실제 대출에는 이자 외에도 인지세, 보증료, 담보 설정 관련 비용과 중도상환수수료가 발생할 수 있습니다. 수수료율과 면제 시점은 상품·계약일·상환 시점에 따라 다릅니다. 고정금리·변동금리·혼합형에 따라서도 실제 납부 이자가 달라지므로 상품설명서와 상환예정표를 확인하세요.</p>
+<p>DSR(총부채원리금상환비율)은 모든 대출의 연간 원리금 상환액을 연소득과 비교하는 심사 지표입니다. 적용 대상, 산정 만기, 스트레스 금리와 규제 비율에는 대출 종류·금융권·차주별 예외가 있으므로 이 계산기의 월 상환액만으로 승인 여부를 판단할 수 없습니다.</p>
 
 <h2>계산 기준과 확인 출처</h2>
 <p>이 계산기는 입력한 대출 원금, 연 이자율, 대출 기간을 기준으로 원리금균등·원금균등·만기일시상환의 월 상환액과 총 이자를 계산합니다. 이자율은 대출 기간 동안 변하지 않는다고 가정하며, 첫 달 일할 계산, 인지세, 중도상환수수료, 금리 우대 조건, 보증료는 포함하지 않습니다.</p>
@@ -114,7 +123,7 @@ input[type="number"]{flex:1;padding:12px 16px;border:1.5px solid var(--border);b
 <p>이 계산 결과는 대출 실행 여부를 판단하는 공식 심사 결과가 아닙니다. 은행은 DSR, LTV, DTI, 신용점수, 재직기간, 소득 안정성, 기존 대출을 함께 봅니다. 실제 계약 전에는 금융회사에서 제공하는 상환예정표와 상품설명서를 기준으로 최종 확인하세요.</p>
 
 <h2>이 도구의 주요 기능</h2>
-<p>대출 원금, 연 이자율, 대출 기간을 입력하면 3가지 상환 방식별 월 상환금과 총 이자를 즉시 계산합니다. 원리금균등 방식은 매월 일정, 원금균등 방식은 첫달 상환금과 감소 패턴, 만기일시상환은 월 이자와 만기 원금을 각각 정확하게 산출합니다. 월별 상환 스케줄 표를 펼치면 첫 12개월의 회차별 원금·이자·잔액 변화를 한눈에 확인할 수 있어 상환 계획 수립에 유용합니다. 모든 계산은 브라우저에서 이루어지며 입력한 금액 정보는 어디에도 저장되지 않습니다.</p>
+<p>대출 원금, 연 이자율, 대출 기간을 입력하면 3가지 상환 방식별 예상 월 상환금과 총 이자를 계산합니다. 원리금균등 방식은 일정한 월 납입액, 원금균등 방식은 첫 달 납입액과 감소 패턴, 만기일시상환은 월 이자와 만기 원금을 구분해 표시합니다. 월별 상환 스케줄 표에서는 첫 12개월의 원금·이자·잔액 변화를 확인할 수 있습니다. 모든 계산은 브라우저에서 이루어지며 입력 정보는 저장되지 않습니다.</p>
 <h2>이런 상황에서 활용하세요</h2>
 <div class="scenario-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:16px 0 4px">
 <div class="scenario" style="background:var(--surface-alt);border:1px solid var(--border);border-radius:10px;padding:16px"><h3>시나리오 1: 주택담보대출 월 상환액 확인</h3><p><strong>상황:</strong> 집을 사기 전 대출 한도보다 중요한 것은 매달 버틸 수 있는 상환액입니다.</p><p><strong>활용법:</strong> 원금, 금리, 기간을 입력해 월 상환액을 계산합니다.</p><p><strong>결과:</strong> 생활비를 해치지 않는 대출 규모를 찾을 수 있습니다.</p></div>
@@ -128,9 +137,9 @@ input[type="number"]{flex:1;padding:12px 16px;border:1.5px solid var(--border);b
 
 <div class="faq-section"><h2 class="section-title">자주 묻는 질문</h2>
 <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>어떤 상환 방식이 가장 유리한가요?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">총 이자만 따지면 원금균등 상환이 가장 적습니다. 하지만 초기 부담이 크므로 소득이 안정적이지 않으면 부담스러울 수 있습니다. 월 부담을 일정하게 유지하고 싶다면 원리금균등이 가장 편리합니다. 단기 자금이 필요하고 만기에 대규모 자금 회수가 예정된 경우 만기일시상환이 유리합니다. 본인의 소득 안정성과 자금 계획에 맞춰 선택하세요.</div></div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>중도상환수수료는 어떻게 계산하나요?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">중도상환수수료는 보통 "중도상환 원금 × 수수료율 × 잔여기간/최초기간" 방식으로 계산됩니다. 주택담보대출은 3년 이내 상환 시 약 1.2~1.4% 수수료가 붙으며, 3년 경과 후에는 면제되는 경우가 많습니다. 정확한 수수료율은 대출 약정서에 명시되어 있습니다.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>중도상환수수료는 어떻게 계산하나요?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">계산 방식과 수수료율, 면제 시점은 금융회사와 상품, 계약일에 따라 다릅니다. 이 계산기는 중도상환수수료를 포함하지 않으므로 대출 약정서의 산식을 확인하거나 금융회사에 특정 날짜의 예상 수수료를 문의하세요.</div></div></div>
 <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>변동금리 대출의 월 상환금도 계산되나요?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">이 계산기는 입력한 이자율이 대출 기간 내내 유지된다고 가정합니다. 변동금리 대출의 경우 기준금리(COFIX, CD 등)에 가산금리를 더해 6개월~1년마다 갱신되므로, 갱신 시점마다 새로운 이자율을 입력해서 다시 계산해야 정확합니다.</div></div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>DSR 40%는 어떻게 적용되나요?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">DSR은 연간 모든 대출의 원리금 상환액을 연 소득으로 나눈 비율입니다. 신규 주택담보대출·신용대출 모두 포함되며, 은행권은 40%, 제2금융권은 50% 이내로 제한됩니다. 연 소득 5천만원이라면 모든 대출 원리금 합계가 연 2천만원(월 약 167만원)을 넘지 않아야 합니다.</div></div></div>
+<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>DSR은 어떻게 확인하나요?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">DSR은 모든 대출의 연간 원리금 상환액을 연소득으로 나눈 비율입니다. 다만 실제 심사에서는 대출별 산정 만기, 스트레스 금리, 제외·예외 대상과 금융권 기준을 함께 적용합니다. 현재 규정과 본인 한도는 금융위원회 안내와 대출을 신청할 금융회사에서 확인하세요.</div></div></div>
 <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>계산 결과가 실제 대출과 다른데요?</span><span class="faq-arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">실제 은행 대출은 근저당 설정비, 인지세, 대출 실행 수수료, 첫 달 일할 계산 이자 등이 추가로 발생할 수 있어 이 계산기 결과와 약간의 차이가 있을 수 있습니다. 정확한 금액은 은행에서 발급하는 "대출 거래 약정서"의 상환 스케줄을 참고하세요.</div></div></div>
 </div>
 
