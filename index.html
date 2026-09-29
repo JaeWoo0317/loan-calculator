@@ -64,9 +64,9 @@ input,select{max-width:100%}button:focus-visible,summary:focus-visible{outline:3
 .comparison{margin-top:32px;padding:24px 0;border-top:1px solid var(--border)}.comparison h2{font-size:20px;margin:0}.comparison-heading{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin:20px 0}.compare-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.compare-fields label{display:block;font-size:13px;margin-bottom:6px}.compare-fields input,.compare-fields select{width:100%}.comparison select{padding:12px;border:1px solid var(--border);border-radius:6px;background:white;color:var(--text-primary);font:inherit}#checkpoint{width:94px}.table-scroll{overflow-x:auto;max-width:100%}.compare-table{width:100%;border-collapse:collapse;min-width:560px;font-size:13px}.compare-table th,.compare-table td{padding:12px 10px;border-bottom:1px solid var(--border);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.compare-table th:first-child{text-align:left}.compare-table thead{background:var(--surface-alt)}.full-schedule{margin-top:24px}.full-schedule summary{font-weight:600;cursor:pointer;padding:14px 0}.schedule-scroll{max-height:420px}.schedule-scroll thead{position:sticky;top:0}.quick-btn:disabled{opacity:.5;cursor:default}@media(max-width:480px){.compare-fields{grid-template-columns:1fr}.comparison-heading h2{font-size:18px}}
 .faq-q{width:100%;border:0;background:var(--surface);text-align:left;color:inherit;font-family:inherit;gap:12px}.faq-item,.other-card{border-radius:8px}.breakdown-section-title,.table-header{letter-spacing:0}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"대출 상환 비교 계산기","url":"https://jwaytools.com/loan-calculator/","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"author":{"@type":"Person","name":"JWAY 편집부","url":"https://jwaytools.com/about.html"},"dateModified":"2026-09-18"}</script></head><body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"대출 상환 비교 계산기","url":"https://jwaytools.com/loan-calculator/","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"author":{"@type":"Person","name":"JWAY 편집부","url":"https://jwaytools.com/about.html"},"dateModified":"2026-09-29"}</script></head><body>
 <nav class="nav"><div class="nav-inner"><a href="https://jwaytools.com/" class="nav-logo">J<span>WAY</span></a><button type="button" aria-label="메뉴 열기" class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button><div class="nav-links"><a href="https://jwaytools.com/salary-calculator/">연봉</a><a href="https://jwaytools.com/income-tax-calculator/">소득세</a><a href="https://jwaytools.com/loan-calculator/">대출</a><a href="https://jwaytools.com/savings-calculator/">예적금</a><a href="https://jwaytools.com/blog/">가이드</a><a href="https://jwaytools.com/editorial-policy.html">편집 원칙</a></div></div></nav>
-<header class="header"><h1>대출 이자 <em>계산기</em></h1><p>원리금균등·원금균등·만기일시상환 3가지 방식으로 예상 월 상환금과 총 이자를 비교합니다.</p></header><div class="trust-bar">최종 검토 2026-09-18 · 상환식 직접 계산·금융감독원 안내 참고 · <a href="https://jwaytools.com/editorial-policy.html">계산 원칙</a></div>
+<header class="header"><h1>대출 이자 <em>계산기</em></h1><p>원리금균등·원금균등·만기일시상환 3가지 방식으로 예상 월 상환금과 총 이자를 비교합니다.</p></header><div class="trust-bar">최종 검토 2026-09-29 · 상환식 직접 계산·금융감독원 안내 참고 · <a href="https://jwaytools.com/editorial-policy.html">계산 원칙</a></div>
 <main class="container"><noscript><p class="input-error">계산하려면 JavaScript가 필요합니다. 아래 계산식과 예시는 JavaScript 없이 읽을 수 있습니다.</p></noscript>
 <p id="inputError" class="input-error" role="status" aria-live="polite"></p>
 <h2 class="section-title">조건 A</h2>
@@ -112,7 +112,7 @@ input,select{max-width:100%}button:focus-visible,summary:focus-visible{outline:3
 
 <div class="guide-section"><div class="guide-card">
 <h2>대출 상환 방식 3가지</h2>
-<p>대출을 받을 때 가장 중요한 결정 중 하나는 상환 방식입니다. 같은 원금, 같은 이자율, 같은 기간이라도 상환 방식에 따라 월 상환금과 총 이자가 크게 달라집니다. 한국에서 가장 많이 사용되는 3가지 방식인 원리금균등, 원금균등, 만기일시상환을 이해하면 본인 상황에 맞는 대출을 선택할 수 있습니다.</p>
+<p>대출을 받을 때 가장 중요한 결정 중 하나는 상환 방식입니다. 같은 원금, 같은 이자율, 같은 기간이라도 상환 방식에 따라 월 상환금과 총 이자가 크게 달라집니다. 이 계산기에서 지원하는 원리금균등, 원금균등, 만기일시상환을 이해하면 본인 상황에 맞는 대출을 선택할 수 있습니다.</p>
 
 <h2>원리금균등 상환</h2>
 <p>매월 같은 금액(원금+이자)을 상환하는 방식입니다. 고정금리와 동일한 이자 계산 기간을 가정하면 월 납입액이 일정하므로 예산 관리가 쉽습니다. 초기에는 이자 비중이 크고 원금 비중이 작지만, 시간이 지날수록 원금 비중이 커집니다. 월 상환금이 일정해서 가계부 작성이나 자동이체 설정에 유리합니다.</p>
@@ -124,7 +124,6 @@ input,select{max-width:100%}button:focus-visible,summary:focus-visible{outline:3
 <h2>만기일시상환</h2>
 <p>대출 기간 동안 이자만 내다가 만기에 원금 전체를 한 번에 상환하는 방식입니다. 월 부담이 가장 적지만 총 이자가 가장 많으며, 만기일에 거액의 목돈이 필요합니다. 전세자금대출이나 사업자 단기 운영자금에 주로 사용됩니다. 만기 연장 가능성과 상환 계획을 반드시 확인해야 합니다.</p>
 
-<div class="guide-tip"><strong>팁:</strong> 1억원을 연 4.5%, 30년 대출 기준으로 비교하면 원리금균등은 월 약 50.7만원에 총 이자 약 8,241만원, 원금균등은 첫달 약 65만원에서 시작해 총 이자 약 6,770만원, 만기일시상환은 월 37.5만원 이자 + 만기에 원금 1억원입니다. 생애주기별 소득 전망에 맞춰 선택하세요.</div>
 
 <h2>공개 검증값</h2>
 <p>2026년 9월 18일, 원금 1억원·연 4.5%·30년(360개월)을 고정금리와 월 단위 상환으로 가정해 세 방식의 수식을 다시 계산하고 화면 결과와 대조했습니다.</p>
@@ -143,22 +142,13 @@ input,select{max-width:100%}button:focus-visible,summary:focus-visible{outline:3
 <p>이 계산기는 입력한 대출 원금, 연 이자율, 대출 기간을 기준으로 원리금균등·원금균등·만기일시상환의 월 상환액과 총 이자를 계산합니다. 이자율은 대출 기간 동안 변하지 않는다고 가정하며, 첫 달 일할 계산, 인지세, 중도상환수수료, 금리 우대 조건, 보증료는 포함하지 않습니다.</p>
 <p>대출 조건을 비교할 때는 <a href="https://finlife.fss.or.kr/" target="_blank" rel="noopener">금융감독원 금융상품 한눈에</a>, 각 은행의 대출상품 설명서, <a href="https://www.fsc.go.kr/" target="_blank" rel="noopener">금융위원회</a>의 가계대출·DSR 안내 자료를 함께 확인하세요. 실제 적용 금리는 신용점수, 담보 종류, 소득, 대출 한도, 우대금리 충족 여부에 따라 달라집니다.</p>
 
-<h2>5년 뒤 갚아야 할 원금까지 비교하기</h2>
-<p>위 기본값에서 조건 A는 원리금균등, 조건 B는 원금균등입니다. 금리와 원금, 기간을 같게 두고 60회 납부 직후를 비교하면 다음과 같습니다. 중간에 집을 팔거나 대환할 계획이라면 전체 30년의 총이자뿐 아니라 그때까지 낸 이자와 남은 원금도 따로 확인해야 합니다.</p>
-<table class="guide-table"><thead><tr><th>60개월 시점</th><th>원리금균등</th><th>원금균등</th></tr></thead><tbody><tr><td>남은 원금</td><td>91,157,917원</td><td>83,333,333원</td></tr><tr><td>지금까지 낸 이자</td><td>21,559,036원</td><td>20,656,250원</td></tr></tbody></table>
-<p>원금균등은 이자를 약 90만원 덜 내고 원금도 약 782만원 더 갚은 상태입니다. 남은 원금이 적은 것은 그동안 더 많은 현금을 상환에 썼기 때문이므로, 잔액 차이를 그대로 수익으로 해석하면 안 됩니다. 실제 대환 비용에는 중도상환수수료와 새 대출 부대비용도 추가해야 합니다.</p>
+<h2>남은 원금은 이자 비용과 다릅니다</h2>
+<p>비교 시점의 잔액은 그때 갚아야 할 원금이고 누적이자는 이미 지불한 비용입니다. 원금균등의 잔액이 더 작은 것은 원금을 더 일찍 납부했기 때문이므로 잔액 차이를 전부 이자 절약으로 보면 안 됩니다. <a href="https://jwaytools.com/blog/loan-comparison-100m/">1억원 대출의 60회 납입 후 비교</a>에 두 금액을 분리한 표를 실었습니다.</p>
 <h2>서로 다른 기간을 비교할 때</h2>
 <p>30년을 40년으로 늘리면 매월 부담은 낮아질 수 있지만, 원금을 천천히 갚아 총이자가 늘어납니다. 비교표에서 첫 납입액과 전체 이자, 같은 개월 수의 잔액을 함께 보세요. 원금 자체가 다른 두 조건은 빌리는 금액이 달라 총이자만으로 우열을 정할 수 없습니다. 비교 시점이 한 조건의 만기를 넘으면 해당 조건의 잔액은 0원, 누적이자는 만기까지의 값으로 유지됩니다.</p>
 <h2>0%와 반올림의 처리</h2>
 <p>금리 0%이면 원리금균등과 원금균등 모두 원금을 개월 수로 나눈 금액을 갚고, 만기일시상환은 마지막 회차에만 원금을 갚습니다. 원금 0원도 계산할 수 있습니다. 빈 입력이나 음수, 50년을 초과하는 기간은 오류로 표시하며 이전 결과를 유지하지 않습니다. 계산 내부에는 소수 원을 유지하고 화면과 CSV에서만 반올림하므로 각 행의 표시금액 합과 총액에 소액 차이가 날 수 있습니다.</p>
-<h2>다른 대출을 검토할 때의 질문</h2>
-<h3>예시 1: 1억원, 연 4.5%, 30년</h3>
-<p>원리금균등은 매월 같은 금액을 내기 때문에 장기 주택담보대출 계획에 적합합니다. 원금균등은 초기 납부액이 더 크지만 총 이자가 줄어듭니다. 만기일시상환은 매월 이자만 내므로 단기 자금 운용에는 편하지만 만기 원금 상환 계획이 반드시 필요합니다.</p>
-<h3>예시 2: 3,000만원, 연 6%, 5년</h3>
-<p>신용대출처럼 기간이 짧고 금리가 높은 상품은 상환 방식에 따른 총 이자 차이가 더 민감하게 느껴집니다. 월 납입 부담이 가능한 사람은 원금균등을 검토할 수 있고, 매월 고정 지출을 예측하고 싶다면 원리금균등이 관리하기 쉽습니다.</p>
-<h3>예시 3: 전세자금대출 만기일시상환</h3>
-<p>전세자금대출은 이자만 납부하다가 만기에 보증금 반환금으로 원금을 갚는 구조가 많습니다. 이 경우 월 부담은 낮지만 계약 만료 시점, 보증금 반환 지연, 금리 갱신 가능성까지 함께 확인해야 합니다.</p>
-
+<h2>변동금리를 비교할 때의 한계</h2><p>A와 B는 각각 입력한 금리가 끝까지 유지되는 시나리오입니다. 중간에 금리가 바뀌는 경로를 자동 계산하는 기능은 아닙니다. <a href="https://jwaytools.com/blog/loan-fixed-vs-variable/">고정·변동금리의 세 가지 계산 사례</a>에서는 처음부터 높은 금리가 적용되는 부담 점검과, 기간별 금리가 달라지는 손익분기 계산을 구별합니다.</p>
 <h2>사용 전 주의사항</h2>
 <p>이 계산 결과는 대출 실행 여부를 판단하는 공식 심사 결과가 아닙니다. 은행은 DSR, LTV, DTI, 신용점수, 재직기간, 소득 안정성, 기존 대출을 함께 봅니다. 실제 계약 전에는 금융회사에서 제공하는 상환예정표와 상품설명서를 기준으로 최종 확인하세요.</p>
 
